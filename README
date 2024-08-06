@@ -1,1 +1,36 @@
+Notification Microservice
 
+This project is a simple notificatino microservice with a python backend and a React frontend. The microservice allows for sending and receiving notifications.
+
+The notification microservice enables users to send and receive notifications. It is a basic interaction between a frontend and a backend service.
+
+
+
+How to use Backend
+
+1. Navigate to the backend directory.
+2. Create and populate `requirements.txt` with necessary dependencies.
+3. Install the required Python packages using `pip install -r requirements.txt`.
+4. Implement the `notification_service.py` script.
+
+
+How to use Frontend
+1. Navigate to the notification-client directory.
+2. Install the required Node.js packages using `npm install`.
+
+
+Starting backend service
+- bash python notificationservice.py
+
+
+Starting frontend service
+- npm start
+
+
+
+API Reference
+POST /notify: Sends a notification with a specified message.
+Request Body: {"message": "Your notification message"}
+Response: {"status": "Notification sent"}
+GET /notifications: Retrieves the list of notifications.
+Response: [{"message": "Notification 1"}, {"message": "Notification 2"}]
